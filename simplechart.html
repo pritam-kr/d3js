@@ -38,6 +38,7 @@
         .data(data)
         .enter()
         .append("rect")
+        .text(d => d)
         .attr("x", (d, i) => i * 60) // Position the bars horizontally
         .attr("y", (d) => 200 - d * 10) // Position the bars vertically
         .attr("width", 40) // Width of the bars
